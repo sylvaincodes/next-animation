@@ -1,8 +1,9 @@
 {
   "name": "next-animation",
   "description": "C'est une librarie Javascript pour créer des animations scroll incroyables",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
+  "license": "MIT",
   "keywords": [
     "github",
     "react",
@@ -29,6 +30,11 @@
 			"import": "./dist/next-animation.es.js",
 			"require": "./dist/next-animation.cjs.js",
 			"types": "./dist/index.d.ts"
+		},
+    "./scroll": {
+			"import": "./dist/scroll/next-animation.es.js",
+			"require": "./dist/scroll/next-animation.cjs.js",
+			"types": "./dist/scroll/index.d.ts"
 		},
 		"./style.css": "./dist/style.css"
 	},

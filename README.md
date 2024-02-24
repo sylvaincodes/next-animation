@@ -1,6 +1,7 @@
 # React Scroll Animation
 
 This is a library for scroll animation.
+It is a common UX pattern on the web. it provides animations that are linked to the scroll position of a scroll container. This means that as you scroll up or down, the linked animation scrubs forward or backward in direct response. Think of interesting effects such as parallax background images or reading indicators which move as you scroll. 
 
 ## Features
 
@@ -27,9 +28,21 @@ npm install next-animation
 
 ## Getting Started
 
-Add the Toaster to your app first. It will take care of rendering all notifications emitted. Now you can trigger `toast()` from anywhere!
+Import this component to your Root Layout compoenent first. It will take care of rendering all animations emitted.
 
 ```tsx
+
+  import {Scroll} from 'next-animation/scroll'
+
+  <body className={firaCode.className}>
+
+        <Scroll>
+        
+            {children}
+
+        </Scroll>
+        
+  </body>
 
 ```
 
