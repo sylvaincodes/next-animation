@@ -1,11 +1,38 @@
-# React + TypeScript + Vite
+# React Scroll Animation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a library for scroll animation.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔥 **Hot by default**
+- 🔩 **Easily Customizable**
+- ⏳ **Promise API** - _Automatic loader from a promise_
+- 🕊 **Lightweight** - _less than 5kb including styles_
+- ✅ **Accessible**
+- 🤯 **Headless Hooks** 
+
+## Installation
+
+#### With yarn
+
+```sh
+yarn add next-animation
+```
+
+#### With NPM
+
+```sh
+npm install next-animation
+```
+
+## Getting Started
+
+Add the Toaster to your app first. It will take care of rendering all notifications emitted. Now you can trigger `toast()` from anywhere!
+
+```tsx
+
+```
+
 
 ## Expanding the ESLint configuration
 
