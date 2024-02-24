@@ -1,14 +1,14 @@
 {
   "name": "next-animation",
-  "description": "C'est une librairie Javascript pour créer des animations incroyables",
-  "private": true,
-  "version": "0.0.0",
+  "description": "C'est une librarie Javascript pour créer des animations scroll incroyables",
+  "version": "1.0.0",
   "type": "module",
   "keywords": [
     "github",
-    "repos",
+    "react",
     "repositories",
-    "sort",
+    "animation",
+    "scroll",
     "stars"
   ],
   "author": "Adande sylvain <sylvaincodeur@gmail.com>",
