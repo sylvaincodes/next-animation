@@ -1,4 +1,4 @@
-# React Scroll Animation
+# next-animation
 
 This is a library for scroll animation.
 It is a common UX pattern on the web. it provides animations that are linked to the scroll position of a scroll container. This means that as you scroll up or down, the linked animation scrubs forward or backward in direct response. Think of interesting effects such as parallax background images or reading indicators which move as you scroll. 
@@ -8,7 +8,7 @@ It is a common UX pattern on the web. it provides animations that are linked to 
 - 🔥 **Hot by default**
 - 🔩 **Easily Customizable**
 - ⏳ **Promise API** - _Automatic loader from a promise_
-- 🕊 **Lightweight** - _less than 5kb including styles_
+- 🕊 **Lightweight** - _less than 45kb including styles_
 - ✅ **Accessible**
 - 🤯 **Headless Hooks** 
 
@@ -28,23 +28,110 @@ npm install next-animation
 
 ## Getting Started
 
-Import this component to your Root Layout compoenent first. It will take care of rendering all animations emitted.
+Import this component and wrap it to your Root Layout component. It will take care of rendering all animations emitted.
 
 ```tsx
 
-  import {Scroll} from 'next-animation/scroll'
+  import {Scroll} from 'next-animation'
 
-  <body className={firaCode.className}>
+```
+
+like this : 
+
+
+```tsx
+
+  "use client"
+
+...
+
+import {Scroll} from 'next-animation'
+
+type LayoutProps = {
+  params: { locale: string };
+  children: React.ReactNode;
+};
+
+function RootLayout({ params, children }: LayoutProps) {
+  const { locale } = params;
+
+  return (
+    <html>
+
+      <body className={firaCode.className}>
+
+        ...
 
         <Scroll>
-        
-            {children}
+          
+        ...
+
+          {children}
+      
+        ...
 
         </Scroll>
         
-  </body>
+        ...
+  
+      </body>
+
+    </html>
+  );
+}
+export default RootLayout;
 
 ```
+
+Import style to your main style file - be sure the path is correct.
+If you are using Next js. import to global.css like this 
+
+```tsx
+
+  @import '@/node_modules/next-animation/dist/style.css';
+
+```
+
+Wrap a component with the attribute data-next-animation.
+
+```tsx
+
+  <div data-next-animation>
+    
+    ...
+
+  </div>
+
+```
+
+Scroll a component from left
+
+```tsx
+
+  <div data-next-animation="left">
+    
+    ...
+
+  </div>
+
+```
+
+Scroll a component from right
+
+```tsx
+
+  <div data-next-animation="right">
+    
+    ...
+
+  </div>
+
+```
+
+
+## Licence 
+
+next-animation is licensed under the MIT license. https://opensource.org/licenses/MIT
 
 
 ## Expanding the ESLint configuration

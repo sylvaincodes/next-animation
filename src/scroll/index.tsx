@@ -4,7 +4,7 @@ const Scroll = ({children}: {children: React.ReactNode}) => {
 
   // SCROLL REVEALD
   const handleScroll = function () {
-  const revealElements = document.querySelectorAll("[data-reveal]");
+  const revealElements = document.querySelectorAll("[data-next-animation]");
 
   for (let index = 0; index < revealElements.length; index++) {
       
